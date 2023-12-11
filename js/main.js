@@ -16,3 +16,20 @@ form1.addEventListener("submit", (e) => {
     clients.push(client);
     console.table(clients);
 })
+
+// Formulaire 2 : 
+
+let form2 = document.querySelector("#form2");
+form2.addEventListener("submit", (e) => {
+    let prenom = document.querySelector("#prenom").value;
+    let nom = document.querySelector("#nom").value;
+    
+    let client = client.filter(prenom, nom);
+
+    // if (client) {
+    //     console.log(client);
+    // } else {
+    //     console.log("Aucun résultat pour votre recherche");
+    // }
+
+})
