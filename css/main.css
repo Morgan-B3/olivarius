@@ -5,7 +5,7 @@
 }
 
 header {
-    background-color: rgb(59, 58, 58);
+    background-color: #333333;
     display: flex;
     align-items: center;
     height: 5rem;
@@ -19,11 +19,12 @@ header {
 
 header ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    width: 250px;
 }
 
 header li {
-    display: inline;
+    display: inline-flex;
     color: white;
     
 }
@@ -95,32 +96,46 @@ button {
 
 .depart {
     background-image: url(../img/Lille-Hall.jpg);
-    height: 15rem;   
-    display: flex; 
+    height: 15rem;  
+    display: flex;
+    align-items: center;
 }
 
-.depart p {
-
+.departext {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background-color: rgba(245, 245, 220, 0.678);
+    
+}
+.depart .departext p {
+    margin: auto;
 }
 
-.formulaire2 {
-    background-color: black;
+.departext hr {
+    color: #b99470;
+    size: 3px;
+    width: 30px;
+}
+
+#form2 {
+    background-color: #1C1C1C;
     color: white;
     display: flex;
     flex-direction: column;
     padding : 2rem
 }
 
-.formulaire2 button {
+#form2 button {
     margin-top: 2rem ;
-    background-color: rgb(226, 154, 81);
+    background-color: #b99470;
     height: 2rem;
 }
 
-.formulaire2 label {
+#form2 label {
     margin-top: 1rem;
 }
 
-.formulaire2 input {
+#form2 input {
     height: 1.5rem;
 }
