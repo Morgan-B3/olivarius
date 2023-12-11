@@ -1,0 +1,55 @@
+header {
+    background-color: rgb(59, 58, 58);
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.logo {
+    width: 40%;       
+}
+
+header ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+header li {
+    display: inline;
+    color: white;
+    
+}
+
+.depart {
+    background-image: url(../img/Lille-Hall.jpg);
+    height: 15rem;   
+    display: flex; 
+}
+
+.depart p {
+
+}
+
+.formulaire2 {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding : 2rem
+}
+
+.formulaire2 button {
+    margin-top: 2rem ;
+    background-color: rgb(226, 154, 81);
+    height: 2rem;
+}
+
+.formulaire2 label {
+    margin-top: 1rem;
+}
+
+.formulaire2 input {
+    height: 1.5rem;
+}
