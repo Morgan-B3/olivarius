@@ -7,6 +7,6 @@ Option petit déjeuner 7€ / nuit
 
 
 Couleurs :
-Gris clair (header) = #333333
+Gris clair (header et titres) = #333333
 Gris foncé (formulaire) = #1C1C1C
 Marron = #B99470

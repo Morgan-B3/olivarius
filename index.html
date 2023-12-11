@@ -19,52 +19,69 @@
         </nav>
     </header>
 
-    <div>
-        <p>Accueil nouveau client</p> 
-        <hr>
-    </div>
+    <main>
+        <div class="arrivee">
+            <div>
+                <p>Accueil nouveau client</p> 
+                <hr color="#B99470" size="4">
+            </div>
+        </div>
 
-    <form id="form1">
-        <label for="firstname">Prénom</label>
-        <input type="text" name="firstname" id="firstname">
+        <form id="form1">
+            <div class="form1"> 
+                <div class="field">
+                    <label for="firstname">Prénom</label>
+                    <input type="text" name="firstname" id="firstname" placeholder="Jean">
+                </div>
 
-        <label for="lastname">Nom</label>
-        <input type="text" name="lastname" id="lastname">
+                <div class="field">
+                    <label for="lastname">Nom</label>
+                    <input type="text" name="lastname" id="lastname" placeholder="DUPONT">
+                </div>
 
-        <label for="night">Nombre de nuits</label>
-        <input type="number" name="night" id="night">
+                <div class="field">
+                    <label for="night">Nombre de nuits</label>
+                    <input type="number" name="night" id="night" min="1" placeholder="1" value="1">
+                </div>
 
-        <label for="room">Chambre</label>
-        <select name="room" id="room">
-            <option value="65">Chambre 1 personne</option>
-            <option value="89">Chambre 2 personnes</option>
-            <option value="139">Chambre 3 personnes</option>
-            <option value="189">Loft</option>
-        </select>
+                <div class="field">
+                    <label for="room">Chambre</label>
+                    <select name="room" id="room">
+                        <option value="65">Chambre 1 personne</option>
+                        <option value="89">Chambre 2 personnes</option>
+                        <option value="139">Chambre 3 personnes</option>
+                        <option value="189">Loft</option>
+                    </select>
+                </div>
 
-        <p>Petit déjeuner</p>
-        <label for="yes">Oui</label>
-        <input type="radio" name="breakfast" value="true" id="yes">
-        <label for="no">Non</label>
-        <input type="radio" name="breakfast" value="false" id="no">
+                <div>
+                    <p>Petit déjeuner</p>
+                    <label for="yes">Oui</label>
+                    <input type="radio" name="breakfast" value="true" id="yes">
+                    <label for="no">Non</label>
+                    <input type="radio" name="breakfast" value="false" id="no">
+                </div>
+            </div>
 
-        <button>Enregistrer le client</button>    
-    </form>
+            <button>Enregistrer le client</button>    
+        </form>
 
-    <div class = depart>
-        <p>Départ client</p>
-        <hr>
-    </div>
+        <div class = depart>
+            <p>Départ client</p>
+            <hr>
+        </div>
 
-    <div class="formulaire2">
-        <label for="prenom">Prénom</label>
-        <input type="text" name="prenom" id="prenom">
+        <div class="formulaire2">
+            <label for="prenom">Prénom</label>
+            <input type="text" name="prenom" id="prenom">
 
-        <label for="nom">Nom</label>
-        <input type="text" name="nom" id="nom">
+            <label for="nom">Nom</label>
+            <input type="text" name="nom" id="nom">
 
-        <button>Rechercher</button>
-    </div>
+            <button>Rechercher</button>
+        </div>
+
+    </main>
     
     
 </body>
