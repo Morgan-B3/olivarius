@@ -181,7 +181,7 @@ button {
 #form2 button {
   margin-top: 2rem;
   background-color: #B99470;
-  height: 2rem;
+  padding: 1rem;
 }
 
 #form2 label {
