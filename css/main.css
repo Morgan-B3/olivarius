@@ -1,157 +1,158 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 header {
-    background-color: #333333;
-    display: flex;
-    align-items: center;
-    height: 5rem;
-    padding-left: 10%;
-    padding-right: 10%;
+  background-color: #333333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  padding: 0 1rem;
 }
 
 .logo {
-    width: 40%;       
+  width: 40%;
 }
 
 header ul {
-    display: flex;
-    justify-content: space-around;
-    width: 250px;
+  display: flex;
+  justify-content: space-around;
+  width: 250px;
 }
 
 header li {
-    display: inline-flex;
-    color: white;
-    
+  display: inline-flex;
+  color: white;
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
 }
 
 form {
-    /* display: flex; */
-    background-color: #1C1C1C;
-    color: white;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    /* margin: 0 4rem; */
-    gap: 1rem;
+  /* display: flex; */
+  background-color: #1C1C1C;
+  color: white;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  /* margin: 0 4rem; */
+  gap: 1rem;
 }
 
-.form1{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+.form1 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-.field{
-    display: flex;
-    flex-direction: column;
+.field {
+  display: flex;
+  flex-direction: column;
 }
 
-input, select{
-    padding: 0.7rem;
+input, select {
+  padding: 0.7rem;
 }
 
 .arrivee {
-    background-image: url(../img/Lille-Seminaires.jpg);
-    background-position: center;
-    width: 100%;
-    /* background-size: cover; */
-    background-repeat: no-repeat;
-    display: flex;
-    padding: 5rem;
+  background-image: url(../img/Lille-Seminaires.jpg);
+  background-position: center;
+  width: 100%;
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+  display: flex;
+  padding: 5rem;
 }
 
-.arrivee div{
-    margin: 0 auto;
-    background-color: rgba(255, 255, 255, 0.7);
-    height: fit-content;
-    padding: 0.8rem;
-    font-size: 2rem;
-    color: #333333;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
+.arrivee div {
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.7);
+  height: fit-content;
+  padding: 0.8rem;
+  font-size: 2rem;
+  color: #333333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
 }
 
-hr{
-    width: 25%;
+hr {
+  width: 25%;
 }
 
-option{
-    background-color: #4C5152;
-    color: white;
-    border: 0;
+option {
+  background-color: #4C5152;
+  color: white;
+  border: 0;
 }
 
 button {
-    background-color: #B99470;
-    padding: 1rem;
-    color: white;
-    border: 0;
+  background-color: #B99470;
+  padding: 1rem;
+  color: white;
+  border: 0;
 }
 
 .depart {
-    background-image: url(../img/Lille-Hall.jpg);
-    background-position: bottom;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    display: flex;
-    padding: 5rem;
+  background-image: url(../img/Lille-Hall.jpg);
+  background-position: bottom;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  padding: 5rem;
 }
 
 .departext {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    background-color: rgba(245, 245, 220, 0.678);
-    
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.7);
 }
+
 .depart .departext p {
-    margin: auto;
+  margin: auto;
 }
 
 .departext hr {
-    color: #b99470;
-    size: 3px;
-    width: 30px;
+  color: #B99470;
+  size: 3px;
+  width: 30px;
 }
 
 #form2 {
-    background-color: #1C1C1C;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    padding : 2rem
+  background-color: #1C1C1C;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
 }
 
 #form2 button {
-    margin-top: 2rem ;
-    background-color: #b99470;
-    height: 2rem;
+  margin-top: 2rem;
+  background-color: #B99470;
+  height: 2rem;
 }
 
 #form2 label {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 #form2 input {
-    height: 1.5rem;
+  height: 1.5rem;
 }
 
 .facture {
-    text-align: center;
-    background-color: #b99470 ;
-    padding: 1rem;
-    color: white;
+  text-align: center;
+  background-color: #B99470;
+  padding: 1rem;
+  color: white;
 }
+
+/*# sourceMappingURL=main.css.map */
