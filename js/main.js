@@ -1,8 +1,5 @@
 import Client from "./Client.js";
 
-// Pour vider le localstorage
-// localStorage.clear();
-
 const clients =[];
 
 // S'il y a des données en localstorage, clients[] prend leur valeur, sinon il devient juste un tableau vide
@@ -86,3 +83,11 @@ form2.addEventListener("submit", (e) => {
     // A partir de maintenant, a chaque fois qu'on clique sur le bouton, ça supprime le message d'avant
     secure = true;
 })
+
+
+// Vider le localStorage
+let clearBtn = document.querySelector(".clear");
+clearBtn.addEventListener("click", () =>{
+    localStorage.clear();
+})
+
