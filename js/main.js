@@ -25,19 +25,26 @@ form2.addEventListener("submit", (e) => {
     let prenom = document.querySelector("#prenom").value;
     let nom = document.querySelector("#nom").value;
     
-    let client = clients.filter(function(item) {
+    let clientList = clients.filter(function(item) {
         return item.firstname.includes(prenom);
-    });
-    console.log(client)
+    });    
 
     let pElement = document.createElement("p");
     pElement.classList = "facture";
+    
 
-    if ((prenom === firstname) && (nom === lastname)) {
-        pElement.textContent = "Facture du client" + " " + prenom + " " + nom + " : " + "total";
+    for(let client of clientList) {
+        console.log(client);
+        console.log(prenom);
+        console.log(client.firstname);
+        console.log(nom);
+        console.log(client.lastname);
+        if ((prenom == client.firstname) && (nom == client.lastname)) {
+        pElement.textContent = "Facture du client" + " " + prenom + " " + nom + " : " + client.totalPrice() + "€.";
     } else {
         pElement.textContent = "Auncun résultat pour votre recherche";
-    };
+    }};
+    //pas de return car nous ne sommes pas dans une méthode
 
     document.body.appendChild(pElement);
 
