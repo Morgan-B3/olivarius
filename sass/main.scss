@@ -121,7 +121,7 @@ main {
     display: flex;
     flex-direction: column;
     /* margin: 0 4rem; */
-    gap: 1rem;
+    gap: 2rem;
     justify-content: space-between;
 
     @media screen and (min-width: v.$lg-breakpoint){
@@ -152,13 +152,16 @@ main {
     }
     button {
         background-color: v.$orange;
-        padding: 1.7rem;
+        padding: 1.2rem;
         color: v.$white;
         border: 0;
-        flex-basis: 15%;
-        // height: fit-content;
-        width: 100%;
-
+        display: flex;
+        gap: 0.5rem;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+            cursor: pointer;
+        }
     }
     
 }

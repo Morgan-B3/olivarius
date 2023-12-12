@@ -77,7 +77,7 @@ form2.addEventListener("submit", (e) => {
             }
         };
     } else {
-        pElement.textContent = "Auncun résultat pour votre recherche";
+        pElement.textContent = "Client introuvable";
     }
         //pas de return car nous ne sommes pas dans une méthode
 
