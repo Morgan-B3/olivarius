@@ -103,9 +103,11 @@ button {
 
 .depart {
     background-image: url(../img/Lille-Hall.jpg);
-    height: 15rem;  
+    background-position: bottom;
+    background-size: 100%;
+    background-repeat: no-repeat;
     display: flex;
-    align-items: center;
+    padding: 5rem;
 }
 
 .departext {
@@ -145,4 +147,11 @@ button {
 
 #form2 input {
     height: 1.5rem;
+}
+
+.facture {
+    text-align: center;
+    background-color: #b99470 ;
+    padding: 1rem;
+    color: white;
 }
