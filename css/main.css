@@ -24,7 +24,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 3rem 2rem;
+  padding: 3rem 8rem;
   gap: 2rem;
 }
 
@@ -58,19 +58,25 @@ main {
 }
 
 /*
- == IMAGE 1 == 
+ == IMAGES == 
  */
 .arrivee {
   background-image: url(../img/Lille-Seminaires.jpg);
   background-position: center;
-  width: 100%;
-  /* background-size: cover; */
+}
+
+.depart {
+  background-image: url(../img/Lille-Hall.jpg);
+  background-position: bottom;
+}
+
+.image {
+  background-size: 100%;
   background-repeat: no-repeat;
   display: flex;
   padding: 10rem 0;
 }
-
-.arrivee div {
+.image div {
   margin: 0 auto;
   background-color: rgba(255, 255, 255, 0.7);
   height: fit-content;
@@ -80,36 +86,34 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 1.5rem;
 }
-
-hr {
+.image div hr {
   width: 25%;
 }
-
-h2 {
+.image div h2 {
   font-family: "EB Garamond", serif;
   font-size: 4rem;
 }
 
 /*
- == FORMULAIRE == 
+ == FORMULAIRES == 
  */
 form {
-  /* display: flex; */
   background-color: #1C1C1C;
   color: white;
   padding: 3rem;
   display: flex;
   flex-direction: column;
   /* margin: 0 4rem; */
-  gap: 2rem;
+  gap: 1rem;
   justify-content: space-between;
 }
 @media screen and (min-width: 1199px) {
   form {
     flex-direction: row;
     align-items: end;
+    margin: 0 4rem;
   }
 }
 form div {
@@ -131,7 +135,7 @@ form div div {
 }
 @media screen and (min-width: 991px) {
   form div div {
-    width: 18%;
+    width: 15%;
   }
 }
 form button {
@@ -139,8 +143,8 @@ form button {
   padding: 1.7rem;
   color: white;
   border: 0;
-  flex-basis: 18%;
-  height: fit-content;
+  flex-basis: 15%;
+  width: 100%;
 }
 
 .breakfast {
@@ -153,7 +157,7 @@ form button {
 }
 @media screen and (min-width: 991px) {
   .breakfast {
-    width: 70%;
+    width: 50%;
   }
 }
 .breakfast div {
@@ -163,7 +167,7 @@ form button {
 }
 
 input, select {
-  padding: 1.5rem;
+  padding: 1rem;
 }
 
 option {
@@ -173,30 +177,8 @@ option {
 }
 
 /*
- == IMAGE 2 == 
+ == FACTURE == 
  */
-.depart {
-  background-image: url(../img/Lille-Hall.jpg);
-  background-position: bottom;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  display: flex;
-  padding: 5rem;
-}
-
-.depart div {
-  margin: 0 auto;
-  background-color: rgba(255, 255, 255, 0.7);
-  height: fit-content;
-  padding: 0.8rem;
-  font-size: 2rem;
-  color: #333333;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.5rem;
-}
-
 .facture {
   text-align: center;
   background-color: #B99470;

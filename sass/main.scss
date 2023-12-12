@@ -29,7 +29,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3rem 2rem;
+    padding: 3rem 8rem;
     gap: 2rem;
 }
 
@@ -66,62 +66,72 @@ main {
 }
 
 /*
- == IMAGE 1 == 
+ == IMAGES == 
  */
 
 .arrivee {
     background-image: url(../img/Lille-Seminaires.jpg);
     background-position: center;
-    width: 100%;
-    /* background-size: cover; */
+}
+
+.depart {
+    background-image: url(../img/Lille-Hall.jpg);
+    background-position: bottom;
+}
+
+.image {
+    background-size: 100%;
     background-repeat: no-repeat;
     display: flex;
-    padding: 10rem 0;
-}
-  
-.arrivee div {
-    margin: 0 auto;
-    background-color: rgba(255, 255, 255, 0.7);
-    height: fit-content;
-    padding: 0.8rem;
-    font-size: 2rem;
-    color: #333333;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-}
+    padding: 10rem  0;
+    
+    div{
+        margin: 0 auto;
+        background-color: rgba(255, 255, 255, 0.7);
+        height: fit-content;
+        padding: 0.8rem;
+        font-size: 2rem;
+        color: #333333;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        
+            hr {
+                width: 25%;
+            }
+            h2{
+                font-family: 'EB Garamond', serif;
+                font-size: 4rem;
+            }
 
-hr {
-    width: 25%;
-}
-
-h2{
-    font-family: 'EB Garamond', serif;
-    font-size: 4rem;
-}
+    };
+};
 
 
 /*
- == FORMULAIRE == 
+ == FORMULAIRES == 
  */
 
- form {
-    /* display: flex; */
+ form { //id = "form1";
+    
     background-color: v.$dark-gray;
     color: v.$white;
     padding: 3rem;
     display: flex;
     flex-direction: column;
     /* margin: 0 4rem; */
-    gap: 2rem;
+    gap: 1rem;
     justify-content: space-between;
 
     @media screen and (min-width: v.$lg-breakpoint){
         flex-direction: row;
         align-items: end;
+        margin: 0 4rem;
+        
     }
-    div {
+    
+    div {//class="form1";
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -130,12 +140,13 @@ h2{
         @media screen and (min-width: v.$md-breakpoint){
             flex-direction: row;
         }
-        div {
+
+        div { //class = "field";
             display: flex;
             flex-direction: column;
             gap: 0.7rem;
             @media screen and (min-width: v.$md-breakpoint){
-                width: 18%;
+                width: 15%;
             }
         }
     }
@@ -144,8 +155,10 @@ h2{
         padding: 1.7rem;
         color: v.$white;
         border: 0;
-        flex-basis: 18%;
-        height: fit-content;
+        flex-basis: 15%;
+        // height: fit-content;
+        width: 100%;
+
     }
     
 }
@@ -157,7 +170,7 @@ h2{
     width: 20%;
     justify-content: start;
     @media screen and (min-width: v.$md-breakpoint){
-        width: 70%;
+        width: 50%;
     }
     
     div{
@@ -170,7 +183,7 @@ h2{
 
 
 input, select{
-    padding: 1.5rem;
+    padding: 1rem;
 }
 
 option{
@@ -181,31 +194,10 @@ option{
 
 
 /*
- == IMAGE 2 == 
+ == FACTURE == 
  */
 
-.depart {
-    background-image: url(../img/Lille-Hall.jpg);
-    background-position: bottom;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    display: flex;
-    padding: 5rem;
-}
 
-.depart div {
-    margin: 0 auto;
-    background-color: rgba(255, 255, 255, 0.7);
-    height: fit-content;
-    padding: 0.8rem;
-    font-size: 2rem;
-    color: #333333;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
-    
-}
 
 .facture {
     text-align: center;
@@ -213,6 +205,8 @@ option{
     padding: 1rem;
     color: v.$white;
 }
+
+
 
 
 
