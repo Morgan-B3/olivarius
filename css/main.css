@@ -86,7 +86,7 @@ hr {
 }
 
 h2 {
-  font-family: "Times New Roman", Times, serif;
+  font-family: "EB Garamond", serif;
 }
 
 /*
@@ -149,21 +149,17 @@ button {
   padding: 5rem;
 }
 
-.departext {
+.depart div {
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.7);
+  height: fit-content;
+  padding: 0.8rem;
+  font-size: 2rem;
+  color: #333333;
   display: flex;
   flex-direction: column;
-  margin: auto;
-  background-color: rgba(255, 255, 255, 0.7);
-}
-
-.depart .departext p {
-  margin: auto;
-}
-
-.departext hr {
-  color: #B99470;
-  size: 3px;
-  width: 30px;
+  align-items: center;
+  gap: 1.5rem;
 }
 
 /*
@@ -177,18 +173,8 @@ button {
   padding: 2rem;
 }
 
-#form2 button {
-  margin-top: 2rem;
-  background-color: #B99470;
-  padding: 1rem;
-}
-
 #form2 label {
   margin-top: 1rem;
-}
-
-#form2 input {
-  height: 1.5rem;
 }
 
 .facture {
