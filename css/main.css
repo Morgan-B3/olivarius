@@ -1,23 +1,24 @@
-/* ========= RESET ========= */
-
+/* 
+========= RESET ========= 
+*/
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-html{
-    font-size: 62.5%;
+html {
+  font-size: 62.5%;
 }
 
-body{
-    font-size: 2rem;
-    font-family: Arial, Helvetica, sans-serif;
+body {
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-
-/* ========= HEADER ========= */
-
+/* 
+========= HEADER ========= 
+*/
 header {
   background-color: #333333;
   display: flex;
@@ -26,8 +27,8 @@ header {
   padding: 3rem 2rem;
 }
 
-header img{
-    width: 60%;
+header img {
+  width: 60%;
 }
 
 nav {
@@ -35,9 +36,9 @@ nav {
 }
 
 header ul {
-    display: flex;
-    justify-content: flex-end;
-    gap: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
 }
 
 header li {
@@ -45,54 +46,52 @@ header li {
   color: white;
 }
 
-
-
-/* ========= CORPS ========= */
-
-
+/* 
+========= CORPS ========= 
+*/
 main {
   display: flex;
   flex-direction: column;
   gap: 4rem;
 }
 
-
-/* == IMAGE 1 == */
-
+/*
+ == IMAGE 1 == 
+ */
 .arrivee {
-    background-image: url(../img/Lille-Seminaires.jpg);
-    background-position: center;
-    width: 100%;
-    /* background-size: cover; */
-    background-repeat: no-repeat;
-    display: flex;
-    padding: 5rem;
+  background-image: url(../img/Lille-Seminaires.jpg);
+  background-position: center;
+  width: 100%;
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+  display: flex;
+  padding: 5rem;
 }
-  
+
 .arrivee div {
-    margin: 0 auto;
-    background-color: rgba(255, 255, 255, 0.7);
-    height: fit-content;
-    padding: 0.8rem;
-    font-size: 2rem;
-    color: #333333;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.7);
+  height: fit-content;
+  padding: 0.8rem;
+  font-size: 2rem;
+  color: #333333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
 }
 
 hr {
-    width: 25%;
+  width: 25%;
 }
 
-h2{
-    font-family: 'Times New Roman', Times, serif;
+h2 {
+  font-family: "Times New Roman", Times, serif;
 }
 
-
-/* == FORMULAIRE 1 == */
-
+/*
+ == FORMULAIRE 1 == 
+ */
 form {
   /* display: flex; */
   background-color: #1C1C1C;
@@ -126,9 +125,9 @@ option {
   border: 0;
 }
 
-.breakfast{
-    display: flex;
-    gap: 2rem;
+.breakfast {
+  display: flex;
+  gap: 2rem;
 }
 
 button {
@@ -138,9 +137,9 @@ button {
   border: 0;
 }
 
-
-/* == IMAGE 2 == */
-
+/*
+ == IMAGE 2 == 
+ */
 .depart {
   background-image: url(../img/Lille-Hall.jpg);
   background-position: bottom;
@@ -167,9 +166,9 @@ button {
   width: 30px;
 }
 
-
-/* == FORMULAIRE 2 == */
-
+/*
+ == FORMULAIRE 2 == 
+ */
 #form2 {
   background-color: #1C1C1C;
   color: white;
