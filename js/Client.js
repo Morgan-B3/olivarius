@@ -7,6 +7,12 @@ export default class Client {
         this.breakfast = breakfast;
     }
 
-    // totalPrice(){ 
-    // }
+    totalPrice(){ 
+        let totalBreakfast = this.room * this.night;
+        //return peut être utilisé parce que nous sommes dans une méthode  
+        if (this.breakfast) {
+            return totalBreakfast + 7 * this.night;
+        }     
+    }
+
 }
