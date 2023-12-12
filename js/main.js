@@ -21,15 +21,24 @@ form1.addEventListener("submit", (e) => {
 
 let form2 = document.querySelector("#form2");
 form2.addEventListener("submit", (e) => {
+    e.preventDefault();
     let prenom = document.querySelector("#prenom").value;
     let nom = document.querySelector("#nom").value;
     
-    let client = client.filter(prenom, nom);
+    let client = clients.filter(function(item) {
+        return item.firstname.includes(prenom);
+    });
+    console.log(client)
 
-    // if (client) {
-    //     console.log(client);
-    // } else {
-    //     console.log("Aucun résultat pour votre recherche");
-    // }
+    let pElement = document.createElement("p");
+    pElement.classList = "facture";
+
+    if ((prenom === firstname) && (nom === lastname)) {
+        pElement.textContent = "Facture du client" + " " + prenom + " " + nom + " : " + "total";
+    } else {
+        pElement.textContent = "Auncun résultat pour votre recherche";
+    };
+
+    document.body.appendChild(pElement);
 
 })
