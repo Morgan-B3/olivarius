@@ -93,7 +93,7 @@ h2 {
 }
 
 /*
- == FORMULAIRE 1 == 
+ == FORMULAIRE == 
  */
 form {
   /* display: flex; */
@@ -112,8 +112,7 @@ form {
     align-items: end;
   }
 }
-
-.form1 {
+form div {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -121,20 +120,46 @@ form {
   flex: 1;
 }
 @media screen and (min-width: 991px) {
-  .form1 {
+  form div {
     flex-direction: row;
   }
 }
-
-.field {
+form div div {
   display: flex;
   flex-direction: column;
   gap: 0.7rem;
 }
 @media screen and (min-width: 991px) {
-  .field {
+  form div div {
     width: 18%;
   }
+}
+form button {
+  background-color: #B99470;
+  padding: 1.7rem;
+  color: white;
+  border: 0;
+  flex-basis: 18%;
+  height: fit-content;
+}
+
+.breakfast {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+  width: 20%;
+  justify-content: start;
+}
+@media screen and (min-width: 991px) {
+  .breakfast {
+    width: 70%;
+  }
+}
+.breakfast div {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
 }
 
 input, select {
@@ -145,20 +170,6 @@ option {
   background-color: #4C5152;
   color: white;
   border: 0;
-}
-
-.breakfast {
-  display: flex;
-  gap: 2rem;
-}
-
-button {
-  background-color: #B99470;
-  padding: 1.7rem;
-  color: white;
-  border: 0;
-  flex-basis: 18%;
-  height: fit-content;
 }
 
 /*
@@ -184,21 +195,6 @@ button {
   flex-direction: column;
   align-items: center;
   gap: 1.5rem;
-}
-
-/*
- == FORMULAIRE 2 == 
- */
-#form2 {
-  background-color: #1C1C1C;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  padding: 2rem;
-}
-
-#form2 label {
-  margin-top: 1rem;
 }
 
 .facture {

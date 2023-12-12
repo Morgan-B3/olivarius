@@ -103,10 +103,10 @@ h2{
 
 
 /*
- == FORMULAIRE 1 == 
+ == FORMULAIRE == 
  */
 
-form {
+ form {
     /* display: flex; */
     background-color: v.$dark-gray;
     color: v.$white;
@@ -121,27 +121,53 @@ form {
         flex-direction: row;
         align-items: end;
     }
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 2rem;
+        flex: 1;
+        @media screen and (min-width: v.$md-breakpoint){
+            flex-direction: row;
+        }
+        div {
+            display: flex;
+            flex-direction: column;
+            gap: 0.7rem;
+            @media screen and (min-width: v.$md-breakpoint){
+                width: 18%;
+            }
+        }
+    }
+    button {
+        background-color: v.$orange;
+        padding: 1.7rem;
+        color: v.$white;
+        border: 0;
+        flex-basis: 18%;
+        height: fit-content;
+    }
+    
 }
-
-.form1{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.breakfast{
+    display:flex;
+    flex-direction: row;
     gap: 2rem;
-    flex: 1;
+    align-items: center;
+    width: 20%;
+    justify-content: start;
     @media screen and (min-width: v.$md-breakpoint){
+        width: 70%;
+    }
+    
+    div{
+        display: flex;
         flex-direction: row;
+        justify-content: start;      
     }
 }
 
-.field{
-    display: flex;
-    flex-direction: column;
-    gap: 0.7rem;
-    @media screen and (min-width: v.$md-breakpoint){
-        width: 18%;
-    }
-}
+
 
 input, select{
     padding: 1.5rem;
@@ -151,20 +177,6 @@ option{
     background-color: v.$option-gray;
     color: v.$white;
     border: 0;
-}
-
-.breakfast{
-    display: flex;
-    gap: 2rem;
-}
-
-button {
-    background-color: v.$orange;
-    padding: 1.7rem;
-    color: v.$white;
-    border: 0;
-    flex-basis: 18%;
-    height: fit-content;
 }
 
 
@@ -195,27 +207,12 @@ button {
     
 }
 
-/*
- == FORMULAIRE 2 == 
- */
-
-#form2 {
-    background-color: v.$dark-gray;
-    color: v.$white;
-    display: flex;
-    flex-direction: column;
-    padding : 2rem
-}
-
-
-#form2 label {
-    margin-top: 1rem;
-}
-
-
 .facture {
     text-align: center;
     background-color: v.$orange ;
     padding: 1rem;
     color: v.$white;
 }
+
+
+
