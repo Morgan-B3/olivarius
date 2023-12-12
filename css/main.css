@@ -187,8 +187,22 @@ option {
 .facture {
   text-align: center;
   background-color: #B99470;
-  padding: 1rem;
+  padding: 5rem;
   color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.payment {
+  background-color: white;
+  color: #B99470;
+  padding: 1rem 2rem;
+  margin: auto;
+  width: fit-content;
+}
+.payment:hover {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=main.css.map */

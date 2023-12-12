@@ -32,6 +32,8 @@ form1.addEventListener("submit", (e) => {
     localStorage.setItem("clients", JSON.stringify(clients));
     console.table(JSON.parse(localStorage.getItem("clients")));
 
+    alert(`Le client ${firstname} ${lastname} a été ajouté.`);
+
 })
 
 
@@ -70,7 +72,7 @@ form2.addEventListener("submit", (e) => {
             if ((prenom == client.firstname) && (nom == client.lastname)) {
                 pElement.textContent = "Facture du client" + " " + prenom + " " + nom + " : " + client.totalPrice() + "€.";
             } else {
-                pElement.textContent = "Auncun résultat pour votre recherche";
+                pElement.textContent = "Client introuvable";
             }
         };
     } else {
@@ -79,10 +81,33 @@ form2.addEventListener("submit", (e) => {
         //pas de return car nous ne sommes pas dans une méthode
 
     document.body.appendChild(pElement);
+    let payment = document.createElement("p");
+
+
+    // Bouton de paiement
+    payment.classList = "payment";
+    payment.textContent = "Payer";
+    document.querySelector(".facture").appendChild(payment);
+
+    let paymentBtn = document.querySelector(".payment");
+    paymentBtn.addEventListener("click", () =>{
+        let leavingClients = (JSON.parse(localStorage.getItem("clients")));
+        for (let i=0 ; i<leavingClients.length; i++){
+            let items = JSON.parse(leavingClients[i]);
+            if ((items.firstname == prenom) && (items.lastname == nom)){
+                leavingClients.splice(i,1);
+            }
+        }
+        clients = JSON.stringify(leavingClients);
+        localStorage.setItem("clients", JSON.stringify(clients));
+        alert(`Le client ${prenom} ${nom} a quitté l'hôtel.`);
+    });
+
 
     // A partir de maintenant, a chaque fois qu'on clique sur le bouton, ça supprime le message d'avant
     secure = true;
 })
+
 
 
 // Vider le localStorage
