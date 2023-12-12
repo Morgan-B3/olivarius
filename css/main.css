@@ -42,7 +42,7 @@ form {
     padding: 2rem;
     display: flex;
     flex-direction: column;
-    margin: 0 4rem;
+    /* margin: 0 4rem; */
     gap: 1rem;
 }
 
@@ -57,10 +57,15 @@ form {
     flex-direction: column;
 }
 
+input, select{
+    padding: 0.7rem;
+}
+
 .arrivee {
     background-image: url(../img/Lille-Seminaires.jpg);
     background-position: center;
-    background-size: 100%;
+    width: 100%;
+    /* background-size: cover; */
     background-repeat: no-repeat;
     display: flex;
     padding: 5rem;
@@ -83,8 +88,10 @@ hr{
     width: 25%;
 }
 
-select{
+option{
     background-color: #4C5152;
+    color: white;
+    border: 0;
 }
 
 button {
