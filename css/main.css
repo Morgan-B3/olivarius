@@ -24,7 +24,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 3rem 2rem;
+  padding: 3rem 8rem;
   gap: 2rem;
 }
 
@@ -58,122 +58,25 @@ main {
 }
 
 /*
- == IMAGE 1 == 
+ == IMAGES == 
  */
 .arrivee {
   background-image: url(../img/Lille-Seminaires.jpg);
   background-position: center;
-  width: 100%;
-  /* background-size: cover; */
+}
+
+.depart {
+  background-image: url(../img/Lille-Hall.jpg);
+  background-position: bottom;
+}
+
+.image {
+  background-size: 100%;
   background-repeat: no-repeat;
   display: flex;
   padding: 10rem 0;
 }
-
-.arrivee div {
-  margin: 0 auto;
-  background-color: rgba(255, 255, 255, 0.7);
-  height: fit-content;
-  padding: 0.8rem;
-  font-size: 2rem;
-  color: #333333;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-}
-
-hr {
-  width: 25%;
-}
-
-h2 {
-  font-family: "EB Garamond", serif;
-  font-size: 4rem;
-}
-
-/*
- == FORMULAIRE 1 == 
- */
-form {
-  /* display: flex; */
-  background-color: #1C1C1C;
-  color: white;
-  padding: 3rem;
-  display: flex;
-  flex-direction: column;
-  /* margin: 0 4rem; */
-  gap: 2rem;
-  justify-content: space-between;
-}
-@media screen and (min-width: 1199px) {
-  form {
-    flex-direction: row;
-    align-items: end;
-  }
-}
-
-.form1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 2rem;
-  flex: 1;
-}
-@media screen and (min-width: 991px) {
-  .form1 {
-    flex-direction: row;
-  }
-}
-
-.field {
-  display: flex;
-  flex-direction: column;
-  gap: 0.7rem;
-}
-@media screen and (min-width: 991px) {
-  .field {
-    width: 18%;
-  }
-}
-
-input, select {
-  padding: 1.5rem;
-}
-
-option {
-  background-color: #4C5152;
-  color: white;
-  border: 0;
-}
-
-.breakfast {
-  display: flex;
-  gap: 2rem;
-}
-
-button {
-  background-color: #B99470;
-  padding: 1.7rem;
-  color: white;
-  border: 0;
-  flex-basis: 18%;
-  height: fit-content;
-}
-
-/*
- == IMAGE 2 == 
- */
-.depart {
-  background-image: url(../img/Lille-Hall.jpg);
-  background-position: bottom;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  display: flex;
-  padding: 5rem;
-}
-
-.depart div {
+.image div {
   margin: 0 auto;
   background-color: rgba(255, 255, 255, 0.7);
   height: fit-content;
@@ -185,22 +88,97 @@ button {
   align-items: center;
   gap: 1.5rem;
 }
+.image div hr {
+  width: 25%;
+}
+.image div h2 {
+  font-family: "EB Garamond", serif;
+  font-size: 4rem;
+}
 
 /*
- == FORMULAIRE 2 == 
+ == FORMULAIRES == 
  */
-#form2 {
+form {
   background-color: #1C1C1C;
   color: white;
+  padding: 3rem;
   display: flex;
   flex-direction: column;
-  padding: 2rem;
+  /* margin: 0 4rem; */
+  gap: 1rem;
+  justify-content: space-between;
+}
+@media screen and (min-width: 1199px) {
+  form {
+    flex-direction: row;
+    align-items: end;
+    margin: 0 4rem;
+  }
+}
+form div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+  flex: 1;
+}
+@media screen and (min-width: 991px) {
+  form div {
+    flex-direction: row;
+  }
+}
+form div div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+@media screen and (min-width: 991px) {
+  form div div {
+    width: 15%;
+  }
+}
+form button {
+  background-color: #B99470;
+  padding: 1.7rem;
+  color: white;
+  border: 0;
+  flex-basis: 15%;
+  width: 100%;
 }
 
-#form2 label {
-  margin-top: 1rem;
+.breakfast {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+  width: 20%;
+  justify-content: start;
+}
+@media screen and (min-width: 991px) {
+  .breakfast {
+    width: 50%;
+  }
+}
+.breakfast div {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
 }
 
+input, select {
+  padding: 1rem;
+}
+
+option {
+  background-color: #4C5152;
+  color: white;
+  border: 0;
+}
+
+/*
+ == FACTURE == 
+ */
 .facture {
   text-align: center;
   background-color: #B99470;
