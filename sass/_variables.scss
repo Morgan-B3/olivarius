@@ -1,3 +1,4 @@
+//colors
 $orange: #B99470;
 $option-gray: #4C5152;
 $light-gray: #333333 ;
@@ -5,3 +6,11 @@ $dark-gray: #1C1C1C;
 
 $white: white;
 $transparent-white: rgba(255, 255, 255, 0.7);
+
+
+//breakpoints
+$xs-breakpoint: 575px;
+$sm-breakpoint: 767px;
+$md-breakpoint: 991px;
+$lg-breakpoint: 1199px;
+$xl-breakpoint: 1399px;
