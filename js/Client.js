@@ -12,7 +12,9 @@ export default class Client {
         //return peut être utilisé parce que nous sommes dans une méthode  
         if (this.breakfast) {
             return totalBreakfast + 7 * this.night;
-        }     
+        } else {
+            return totalBreakfast;
+        } 
     }
 
 }
